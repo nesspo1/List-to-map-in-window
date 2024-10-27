@@ -1,6 +1,10 @@
 import turtle
+import tkinter
 wn = turtle.Screen()
+
 wn.setup(360,360)
+#root = wn._root
+#root.resizable(width=False,height=False)
 mountainimg = "C:/Users/dakot/source/repos/project3/blockfromarray/Images/mountainsquare.gif"
 grassimg = "C:/Users/dakot/source/repos/project3/blockfromarray/Images/grasssquare.gif"
 wn.addshape(grassimg)
@@ -14,22 +18,18 @@ map1 = ["x","x","x","x","x","x",
 class grass:
     def __init__(self,name,x,y):
         name = turtle.Turtle(shape=grassimg)
-        self = name
-        self.pu()
-        self.speed(0)
-        #self.color("green")
-        self.setx(x)
-        self.sety(y)
+        name.pu()
+        name.speed(0)
+        name.setx(x)
+        name.sety(y)
+
 class mountain:
     def __init__(self,name,x,y):
         name = turtle.Turtle(shape=mountainimg)
-        self = name
-        self.pu()
-        self.speed(0)
-        self.setx(x)
-        self.sety(y)
-#global startpointx
-#global startpointy
+        name.pu()
+        name.speed(0)
+        name.setx(x)
+        name.sety(y)
 
 
 def makemap():
