@@ -26,7 +26,6 @@ class mountain:
         self = name
         self.pu()
         self.speed(0)
-        #self.color("grey")
         self.setx(x)
         self.sety(y)
 #global startpointx
